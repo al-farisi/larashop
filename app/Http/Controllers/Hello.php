@@ -10,4 +10,9 @@ class Hello extends Controller
     {
         return 'hello world from controller : )';
     }
+
+    public function show($name)
+    {
+        return view('hello',array('name' => $name));
+    }
 }
